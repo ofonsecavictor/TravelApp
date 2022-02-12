@@ -5,10 +5,11 @@ import {Header} from '../../components/Header';
 import {Category} from '../../components/Category';
 import {Popular} from '../../components/Popular';
 import {SearchBar} from '../../components/SearchBar';
-
 import {styles} from './styles';
 
 export function Home() {
+
+  
   return (
     <ScrollView style={styles.container}>
       <Header title="TRAVELAPP" description="Choose another" />
