@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import MapView from 'react-native-maps';
 import {styles} from './styles';
 import Geolocation from 'react-native-geolocation-service';
@@ -54,8 +54,8 @@ export function Maps () {
           showsBuildings={true}
           maxZoomLevel={17.5}
           loadingEnabled={true}
-          loadingIndicatorColor="#fff"
-          loadingBackgroundColor="#242f3e"
+          loadingIndicatorColor="#000"
+          loadingBackgroundColor="#fff"
           style={styles.map}
           initialRegion={{
             latitude: location.latitude,

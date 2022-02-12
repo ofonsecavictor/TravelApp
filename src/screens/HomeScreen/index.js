@@ -12,10 +12,7 @@ export function Home() {
   return (
     <ScrollView style={styles.container}>
       <Header title="TRAVELAPP" description="Choose another" />
-
       <SearchBar/>
-
-
       <Text
         style={{
           marginTop: 104,

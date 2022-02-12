@@ -36,23 +36,7 @@ export function MainTab() {
     />
 
 <Tab.Screen
-      name="Favorites"
-      component={Favorites}
-      options={{
-        headerShown: false,
-        tabBarIcon: ({size, color}) => (
-          <MaterialCommunityIcons
-            name="home"
-            type="ionicon"
-            size={size}
-            color={color}
-          />
-        ),
-      }}
-    />
-
-<Tab.Screen
-      name="Maps"
+      name="Mapa"
       component={Maps}
       options={{
         headerShown: false,
@@ -68,7 +52,23 @@ export function MainTab() {
     />
 
 <Tab.Screen
-      name="Account"
+      name="Favoritos"
+      component={Favorites}
+      options={{
+        headerShown: false,
+        tabBarIcon: ({size, color}) => (
+          <MaterialCommunityIcons
+            name="home"
+            type="ionicon"
+            size={size}
+            color={color}
+          />
+        ),
+      }}
+    />
+
+<Tab.Screen
+      name="Perfil"
       component={Account}
       options={{
         headerShown: false,
