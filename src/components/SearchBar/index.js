@@ -14,9 +14,8 @@ export function SearchBar () {
     return (
         <View style={styles.container}>
         <Searchbar style={styles.search}
-      placeholder="Pesquise"
+      placeholder="Pesquisar"
       onChangeText={onChangeSearch}
-        icon="source"
       value={searchQuery}
     />
 

@@ -4,7 +4,9 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import {Home} from '../screens/HomeScreen';
-
+import {Account} from '../screens/AccountScreen';
+import {Maps} from '../screens/Maps';
+import {Favorites} from '../screens/Favorites';
 const Tab = createBottomTabNavigator();
 
 export function MainTab() {
@@ -25,6 +27,54 @@ export function MainTab() {
         tabBarIcon: ({size, color}) => (
           <MaterialCommunityIcons
             name="home"
+            type="ionicon"
+            size={size}
+            color={color}
+          />
+        ),
+      }}
+    />
+
+<Tab.Screen
+      name="Favorites"
+      component={Favorites}
+      options={{
+        headerShown: false,
+        tabBarIcon: ({size, color}) => (
+          <MaterialCommunityIcons
+            name="home"
+            type="ionicon"
+            size={size}
+            color={color}
+          />
+        ),
+      }}
+    />
+
+<Tab.Screen
+      name="Maps"
+      component={Maps}
+      options={{
+        headerShown: false,
+        tabBarIcon: ({size, color}) => (
+          <MaterialCommunityIcons
+            name="home"
+            type="ionicon"
+            size={size}
+            color={color}
+          />
+        ),
+      }}
+    />
+
+<Tab.Screen
+      name="Account"
+      component={Account}
+      options={{
+        headerShown: false,
+        tabBarIcon: ({size, color}) => (
+          <MaterialCommunityIcons
+            name="account"
             type="ionicon"
             size={size}
             color={color}
